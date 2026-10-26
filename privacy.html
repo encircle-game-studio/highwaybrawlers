@@ -10,12 +10,12 @@
 
 <h2>What we collect ourselves</h2>
 <p><strong>Without signing in: nothing.</strong> Your progress (unlocked levels, best places and times, cash, gold, the bikes you own, their upgrades and paint, rival grudges, career totals, achievements and settings) is stored on your device. The game also keeps a copy in your own iCloud (iPhone and iPad) or your Google Play Games account (Android), so a new phone can pick up where you left off. We cannot see that copy. Turn it off in Settings &gt; Account &gt; Cloud save.</p>
-<p><strong>Optional sign-in and cloud save (coming in a later update).</strong> Signing in is not available in the current version of the game. When it arrives, if you choose to sign in with Apple or Facebook, we store a copy of your game save (the same progress listed above) in Google Firebase, linked to an account ID, so you can continue on another phone or tablet. We do not receive your email address, name, friends list or contacts, and we do not use the account for ads or tracking. Signing in is never required to play.</p>
+<p><strong>Optional sign-in and cloud save.</strong> If you choose to sign in (Settings &gt; Account, or the card on the home screen), we store a copy of your game save (the same progress listed above) in Google Firebase, linked to an account ID, so you can continue on another phone or tablet. The copy of your progress is stored in Cloud Firestore in India (Mumbai). Your account ID is kept by Firebase Authentication, which Google runs only in the United States. We do not receive your email address, name, friends list or contacts, and we do not use the account for ads or tracking. Signing in is never required to play. Before you sign in, the game shows a short notice in English or Hindi with what is kept, why, where, how to change your mind and how to complain.</p>
 <ul>
-<li>Sign in with Apple: Apple gives us an anonymous account ID for this app.</li>
-<li>Facebook: we use Facebook Login only, with Limited Login on iOS, and request only your public profile ID. Facebook app events and advertising ID collection are switched off in the game.</li>
+<li>Sign in with Apple (iPhone, iPad and Android): we ask Apple for no name and no email; Apple gives us an account ID for this app.</li>
+<li>Facebook (where the game offers it): we use Facebook Login only and ask only for your public profile ID. On iPhone and iPad the game opens Facebook's own sign-in page in Apple's secure web sheet, so no Facebook software runs inside the game. On Android the game uses Facebook's login library with its app events and advertising ID collection switched off.</li>
 </ul>
-<p>Your cloud save is kept until you delete your account. Deleting your account in the game removes the cloud save and the account straight away and, for Apple, revokes the game's access to your Apple account.</p>
+<p>Your cloud save is kept until you delete your account. Delete account (Settings &gt; Account) removes the cloud save and the account straight away and, if you used Sign in with Apple on an iPhone or iPad, revokes the game's access to your Apple account. Sign out keeps your progress on your device and stops the account copy. On Android you can also remove the game from your Apple ID's "Sign in with Apple" list in your Apple account settings.</p>
 
 <h2>Services inside the game</h2>
 <table>
@@ -23,7 +23,7 @@
 <tr><td>Google AdMob (ads)</td><td>Advertising ID (Android only), approximate location from IP address, ad interactions, crash and performance data</td><td>Showing ads between races and rewarded ads you choose to watch, measuring ads, preventing fraud</td></tr>
 <tr><td>RevenueCat (purchases)</td><td>An anonymous app user ID and your purchase history</td><td>Checking purchases with Apple or Google and restoring them</td></tr>
 <tr><td>Apple Game Center / Google Play Games</td><td>Your player nickname and ID, best times, knockouts, winnings and achievements; on Android also a copy of your progress (Saved Games), and analytics and diagnostics that Google collects for its own service</td><td>Leaderboards, achievements and keeping your progress on a new phone</td></tr>
-<tr><td>Google Firebase (only if you sign in; sign-in is coming in a later update)</td><td>Account ID, sign-in provider and your cloud game save</td><td>Optional sign-in and cloud save</td></tr>
+<tr><td>Google Firebase (only if you sign in)</td><td>Account ID and sign-in provider (Firebase Authentication, United States) and your cloud game save (Cloud Firestore, India)</td><td>Optional sign-in and cloud save</td></tr>
 <tr><td>Apple App Store / Google Play</td><td>Payment details</td><td>Processing purchases. We never see your card details.</td></tr>
 </table>
 <p>Their policies: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.revenuecat.com/privacy">RevenueCat</a>, <a href="https://www.facebook.com/privacy/policy">Meta (Facebook Login)</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
@@ -35,18 +35,28 @@
 <li>In the EEA, UK, Switzerland and where local law requires, you can give or withdraw consent for personalized ads in the game's privacy choices.</li>
 <li>On Android you can reset or delete your advertising ID in Android settings.</li>
 <li>Remove Ads, a one-time purchase, turns off the ads between races.</li>
-<li>Delete my data (Settings &gt; Privacy) removes your progress from your device and from the iCloud or Play Games copy, and resets this game's Game Center achievements. Leaderboard scores already sent stay with your Game Center or Play Games account; you can remove them there (Play Games profile, or Apple's Data and Privacy page).</li>
+<li>Delete my data (Settings &gt; Privacy) removes your progress from your device and from the iCloud or Play Games copy, deletes your account and its cloud save if you signed in, and resets this game's Game Center achievements. Leaderboard scores already sent stay with your Game Center or Play Games account; you can remove them there (Play Games profile, or Apple's Data and Privacy page).</li>
 <li>Uninstalling the game deletes the game data on your device. The iCloud or Play Games copy stays until you use Delete my data or remove it from your account.</li>
 </ul>
 
-<h2>Children</h2>
+<h2>Children and age</h2>
 <p>The game is made for players aged 13 and over. It is not directed at children under 13, and we do not knowingly collect personal information from them. Ads are limited to content suitable for the game's age rating.</p>
+<p>Where your App Store or Google Play account shares an age range (Apple's Declared Age Range, Google Play Age Signals), the game reads it on each launch to apply these rules: under 13, no sign-in and only non-personalized ads; under 18, only non-personalized ads. The age range stays on your device and is never stored or sent to us.</p>
+
+<h2>Players in India (Digital Personal Data Protection Act, 2023)</h2>
+<ul>
+<li>In India the game shows only non-personalized ads, and players under 18 cannot use our sign-in; their progress is saved only on the device and in their own iCloud or Play Games account, which we cannot see.</li>
+<li>If the store shares no age, the game asks for your year of birth only when you choose to sign in, and keeps only whether you are 18 or over, never the year.</li>
+<li>You can ask us for a summary of the data we hold about you and the services that process it, ask us to correct or erase it, and name another person to act for you. Email support@encircletechnologies.com, our grievance contact. We aim to reply within 7 days.</li>
+<li>Some of the services above handle data outside India: Firebase Authentication in the United States, and Google AdMob, RevenueCat, Apple and Meta in their own locations.</li>
+<li>If you are not satisfied with our answer, you can complain to the Data Protection Board of India.</li>
+</ul>
 
 <h2>Security and retention</h2>
 <p>Data handled by the services above is sent over encrypted connections and kept according to their policies. We do not sell personal information.</p>
 
 <h2>Contact and requests</h2>
-<p>For questions or data requests, email <strong>support@encircletechnologies.com</strong>. We reply within 30 days.</p>
+<p>For questions, data requests or complaints (our grievance contact, including under India's DPDP Act), email <strong>support@encircletechnologies.com</strong>. We reply within 30 days at most.</p>
 <p>To delete your data, follow the steps on <a href="delete-data.html">Delete your Highway Brawlers data</a>.</p>
 
 <h2>Changes</h2>

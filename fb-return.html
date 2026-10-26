@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Highway Brawlers sign-in</title>
+<style>body{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;max-width:560px;margin:0 auto;padding:32px 16px;color:#1f2a3d}</style>
+</head><body>
+<p>Returning to Highway Brawlers...</p>
+<p>If nothing happens, close this page and go back to the game.</p>
+<script>
+// Facebook sign-in on iPhone and iPad (Highway Brawlers 0.8.0): Facebook sends you back here and the game's sign-in
+// sheet picks up the answer. The answer is in the part of the address after "#", which browsers never send to any
+// server, so this site never sees it. This page stores nothing and loads nothing else.
+if (location.hash.length > 1) { location.replace("hbfb://authorize" + location.hash); }
+</script>
+</body></html>
